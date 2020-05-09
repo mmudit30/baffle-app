@@ -1,0 +1,54 @@
+.section-head h1, .section-head h3{
+    width: fit-content;
+}
+.section-subhead{
+    justify-content: center;
+}
+.section-subhead p{
+    font-size: 1.5rem;
+}
+/****************************
+    Parent
+****************************/
+.first-fluid{
+    color: white;
+    background: rgb(115,64,128);
+    background: radial-gradient(circle, rgba(115,64,128,0.9452731776304272) 11%, rgba(102,64,128,1) 57%);
+}
+.first-fluid h1{
+    font-size: 6rem;
+    font-weight: 400;
+}
+.first-fluid h3{
+    font-size: 4.2rem;
+    font-weight: 500;
+}
+.horror{
+    text-decoration: line-through wavy red;
+}
+
+/* ****************** */
+
+  .services-section-content-col div.card{
+      background-color: rgba(0, 0, 0, 0.363);
+    border: 0.1px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .services-section-content-col:hover div.card{
+    border: 0.5px solid #9BA5BA;
+    border-radius: 0.5rem;
+    transform: scale(1.15);
+    transition: transform 1s;
+    /* box-shadow: 3px 3px 5px #9BA5BA;   */
+  }
+
+  .zodiac-img{
+    width: 7rem;
+    height: 5rem;
+    background-position:center;
+	background-repeat:no-repeat;
+    background-size:contain;
+    border-radius: 1rem;
+}
+  

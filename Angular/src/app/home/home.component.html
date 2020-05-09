@@ -1,0 +1,40 @@
+<!-- First  -->
+<div class="first-fluid container-fluid">
+
+    <div class="container mb-4">
+        <div class="section-head">
+            <h3 class="horror mx-auto">HOROSCOPE</h3>
+            <h1 class="text-warning mx-auto">HOR<span class="text-danger">R</span>ORSCOPE</h1>
+        </div>
+        <div class="row section-subhead">
+            <p class="col-12 text-right mx-auto">
+                - You're probably breathing right now.
+            </p>
+            <h2 class="col-12 mb-5 text-center mx-auto">
+                Welcome to the most discouraging and funny horoscope.
+            </h2>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 services-section-content-col mb-5" *ngFor="let item of zodiacs">
+                <div class="card" >
+                    <div class="card-body text-center" 
+                    >
+                        
+                        <div class="row justify-content-center">
+                            <div class="zodiac-img text-center"
+                            [ngStyle]="{'background-image': urlopen+item.img+urlclose}">
+                            </div>
+                        </div>
+                        <p class="card-title lead">{{item.name}}</p>
+                        <p class="card-text">{{item.desc}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+</div>
