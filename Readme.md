@@ -1,1 +1,1 @@
-# Baffle Waffle Me App
+# Horrorscope App
