@@ -9,7 +9,6 @@ const routes: Routes = [
   {
     path: '', pathMatch: 'full', 
     redirectTo:'home'
-    // redirectTo:'calendar'
   },
   {
     path: 'home', component: HomeComponent

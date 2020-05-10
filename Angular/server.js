@@ -21,10 +21,10 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/build'));
 
 app.get('/*', (req,res) => {
-    res.sendFile(path.join(__dirname, 'dist', 'index.html'))
+    res.sendFile(path.join(__dirname, 'build', 'index.html'))
 });
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 3000)

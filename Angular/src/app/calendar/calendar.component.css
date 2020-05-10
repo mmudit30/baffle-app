@@ -5,9 +5,9 @@
 }
 .section-head h1{
     font-family: 'creep';
-    margin-top: 2rem;
+    margin-top: 0.7rem;
     width: fit-content;
-    font-size: 5rem;
+    font-size: 4rem;
     color:rgb(173, 24, 24);
 }
 .section-subhead{
@@ -18,9 +18,9 @@
 /* ******************** */
 
 .dobclass{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     /* margin-bottom: 3rem; */
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
 mbsc-calendar{
     background-color: steelblue;
