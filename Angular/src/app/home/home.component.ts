@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {zodiacs} from '../../assets/zodiacs';
+import { ZodiacService } from '../zodiac.service';
 
 @Component({
   selector: 'app-home',
@@ -13,9 +14,17 @@ export class HomeComponent implements OnInit {
 
   zodiacs = zodiacs;
 
-  constructor() { }
+  constructor(
+    private zodiacService: ZodiacService
+  ) { }
 
   ngOnInit() {
   }
+
+  sendData(name){
+    this.zodiacService.getDataByZodiac(name);
+  }
+
+
 
 }

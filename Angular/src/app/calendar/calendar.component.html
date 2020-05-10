@@ -1,0 +1,20 @@
+    <div class="container-fluid mb-4">
+        <div class="section-head">
+            <h1 class="mx-auto">DATE OF BIRTH</h1>
+        </div>
+        <div class="row section-subhead">
+            <div class="col-md-6 col-9 mx-auto dobclass text-center">
+                <mbsc-calendar 
+                    class="mx-auto"
+                    [(ngModel)]="dateofbirth"
+                    [options]="calendarCenterSettings" 
+                    placeholder="MM/DD/YYYY">
+                </mbsc-calendar>
+            </div>
+        </div>
+        <div class="row section-subhead">
+            <div class="col-9 mx-auto dobclass text-center">
+                <button class="btn btn-warning text-white" (click)="setDate()">SUBMIT</button>
+            </div>
+        </div>
+    </div>

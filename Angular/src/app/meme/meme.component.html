@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="section-head">
+        <h1 class="mx-auto">HERE'S SOMETHING FOR {{zodiac}}</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h2 class="mx-auto">
+                <!-- {{data.url}} -->
+                {{data.title}}
+            </h2>            
+        </div>
+        <div class="row">
+            <div class="row justify-content-center mx-auto">
+                <div class="zodiac-img text-center"
+                [ngStyle]="{'background-image': urlopen+data.url+urlclose}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

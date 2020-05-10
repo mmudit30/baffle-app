@@ -1,0 +1,42 @@
+.container-fluid{
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.section-head h1{
+    font-family: 'creep';
+    margin-top: 2rem;
+    width: fit-content;
+    font-size: 5rem;
+    color:rgb(173, 24, 24);
+}
+.section-subhead{
+    justify-content: center;
+}
+
+/* ******************** */
+/* ******************** */
+
+.dobclass{
+    font-size: 4.5rem;
+    /* margin-bottom: 3rem; */
+    margin-top: 3rem;
+}
+mbsc-calendar{
+    background-color: steelblue;
+}
+button{
+    font-size: 2rem;
+}
+@media only screen and (max-width: 500px){
+    .dobclass{
+        font-size: 2rem;
+    }
+    .section-head h1{
+        font-size: 2rem;
+    }
+    button{
+        font-size: 1rem;
+    }
+    
+}

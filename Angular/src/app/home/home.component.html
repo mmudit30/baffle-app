@@ -4,10 +4,10 @@
     <div class="container mb-4">
         <div class="section-head">
             <h3 class="horror mx-auto">HOROSCOPE</h3>
-            <h1 class="text-warning mx-auto">HOR<span class="text-danger">R</span>ORSCOPE</h1>
+            <h1 class="text-warning mx-auto">HOR<span style="color:#9F05C5">R</span>ORSCOPE</h1>
         </div>
         <div class="row section-subhead">
-            <p class="col-12 text-right mx-auto">
+            <p class="col-12 text-center mx-auto">
                 - You're probably breathing right now.
             </p>
             <h2 class="col-12 mb-5 text-center mx-auto">
@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 services-section-content-col mb-5" *ngFor="let item of zodiacs">
-                <div class="card" >
+                <div class="card" (click)="sendData(item.name)">
                     <div class="card-body text-center" 
                     >
                         
@@ -38,3 +38,5 @@
     </div>
       
 </div>
+
+<app-calendar></app-calendar>
