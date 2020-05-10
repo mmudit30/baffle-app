@@ -19,16 +19,17 @@ export class ZodiacService {
 	getDataByDate(day, month) {
 		// code snippet from https://coursesweb.net/javascript/zodiac-signs_cs
 		let memezod= this.getMemeByDate(day, month);
-		this.http.get(`https://meme-api.herokuapp.com/gimme/${this.zodiac}`).subscribe((res) => {
+		this.http.get(`https://meme-api.herokuapp.com/gimme/${memezod}`).subscribe((res) => {
 			this.data = (res);
 			console.log(this.data);
 			this.router.navigate(['/meme'],{relativeTo: this.route});      
 		});
+
 	}
 	getDataByZodiac(passedZodiac) {
 		// code snippet from https://coursesweb.net/javascript/zodiac-signs_cs
 		let memezod= this.getMemeByZodiac(passedZodiac);
-		this.http.get(`https://meme-api.herokuapp.com/gimme/${this.zodiac}`).subscribe((res) => {
+		this.http.get(`https://meme-api.herokuapp.com/gimme/${memezod}`).subscribe((res) => {
 			this.data = (res);
 			console.log(this.data);
 			this.router.navigate(['/meme'],{relativeTo: this.route});
